@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import data from './data';
-import Question from './components/Question';
+import SingleQuestion from './components/Question';
 import './App.scss';
 
 const App = () => {
+
+  const [questions, setQuestions] = useState(data);
+
   return (
     <main>
       <div className="container">
-        <h1>This is really amazing!!</h1>
+        <h3>This is really amazing!!</h3>
+        <section className="info">
+            {
+              questions.map((question) => {
+                return <SingleQuestion key={question.key} {...question}/>
+              })
+            }
+        </section>
       </div>
     </main>
   );
