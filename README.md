@@ -1,2 +1,1 @@
-# Accordion
- 
+# Accordion React App
