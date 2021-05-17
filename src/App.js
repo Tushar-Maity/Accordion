@@ -5,7 +5,7 @@ import './App.scss';
 
 const App = () => {
 
-  const [questions, setQuestions] = useState(data);
+  const [questions] = useState(data);
 
   return (
     <main>
