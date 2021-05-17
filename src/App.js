@@ -10,7 +10,7 @@ const App = () => {
   return (
     <main>
       <div className="container">
-        <h3>This is really amazing!!</h3>
+        <h3>Questions and Answers!!</h3>
         <section className="info">
             {
               questions.map((question) => {
