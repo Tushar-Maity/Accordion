@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import data from './data';
+import Question from './components/Question';
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="app">
-       <h1>This is really amazing!!</h1>
-    </div>
+    <main>
+      <div className="container">
+        <h1>This is really amazing!!</h1>
+      </div>
+    </main>
   );
 }
 
